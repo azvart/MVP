@@ -15,7 +15,7 @@ export const Reducer =(state,action)=>{
                             ...state,
                             ...action.payload
                         }
-                    case 'LOG_OUT':
+                    case 'ADD_ANSWER_USER':
                         return{
                             ...state,
                             ...action.payload
@@ -25,6 +25,11 @@ export const Reducer =(state,action)=>{
                             ...state,
                             ...action.payload
                         }
+                    case 'UPDATE_RAITING':
+                            return{
+                                ...state,
+                                ...action.payload
+                            }
                 default:
                     return state;
             }

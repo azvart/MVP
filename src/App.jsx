@@ -1,5 +1,6 @@
 import React,{useReducer,useEffect} from 'react';
 import './app.scss';
+
 import{Route,Switch,Redirect,BrowserRouter} from 'react-router-dom';
 import {Context} from './store/context';
 import {Store } from './store/store';
@@ -9,8 +10,11 @@ import Page from './components/page/index';
 
 const App =()=>{
   const[state,dispatch] = useReducer(Reducer,Store);
+  
+  
 
- 
+
+
   return(
     <Context.Provider value={{dispatch,state}}>
          

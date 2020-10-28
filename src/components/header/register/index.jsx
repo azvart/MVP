@@ -11,7 +11,10 @@ const Register =()=>{
           password:'',
           user:false,
           hr:false,
-          
+          raiting:0,
+          id:'user'+Math.floor(Math.random()*100000),
+          userTask:[],
+          userAnswer:[]
 
       });
       
@@ -21,8 +24,7 @@ const Register =()=>{
                 type:'REGISTER',
                 payload:{
                     
-                    user:[{...register,id:'user'+Math.floor(Math.random()*100000),
-                        tasks:[],answer:[]},...state.user]
+                    user:[{...register,},...state.user]
                     
                     
                    
@@ -44,7 +46,11 @@ const Register =()=>{
                     email:register.email,
                     password:register.password,
                     user:false,
-                    hr:false
+                    hr:false,
+                    raiting:0,
+                    id:'user'+Math.floor(Math.random()*100000),
+                    userTask:[],
+                    userAnswer:[]
                 })}
                 />
             </div>
@@ -60,7 +66,11 @@ const Register =()=>{
                     email:e.target.value,
                     password:register.password,
                     user:false,
-                    hr:false
+                    hr:false,
+                    raiting:0,
+                    id:'user'+Math.floor(Math.random()*100000),
+                    userTask:[],
+                    userAnswer:[]
                 })}
                 />
             </div>
@@ -76,7 +86,11 @@ const Register =()=>{
                     email:register.email,
                     password:e.target.value,
                     user:false,
-                    hr:false
+                    hr:false,
+                    raiting:0,
+                    id:'user'+Math.floor(Math.random()*100000),
+                    userTask:[],
+                    userAnswer:[]
                 })}
                 />
             </div>
@@ -91,7 +105,11 @@ const Register =()=>{
                     email:register.email,
                     password:register.password,
                     user:false,
-                    hr:!register.hr
+                    hr:!register.hr,
+                    raiting:0,
+                    id:'user'+Math.floor(Math.random()*100000),
+                    userTask:[],
+                    userAnswer:[]
                 })}
                 />
             </div>
@@ -106,7 +124,11 @@ const Register =()=>{
                     email:register.email,
                     password:register.password,
                     user:!register.user,
-                    hr:false
+                    hr:false,
+                    raiting:0,
+                    id:'user'+Math.floor(Math.random()*100000),
+                    userTask:[],
+                    userAnswer:[]
                 })}
                 />
             </div>
